@@ -18,6 +18,7 @@
                 </button>
             </form>
 
+
             <a class = "menu-item cart" href = "{{ url('cart') }}">
                 <img src = "{{ asset('./storage/images/cart.png') }}" alt = "cart">
             </a>
