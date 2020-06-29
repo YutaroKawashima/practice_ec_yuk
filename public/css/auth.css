@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+}
+
+div,table,tr,th,td {
+    font-weight: lighter;
+}
+
+header {
+    background-color: #1E90FF;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, tr, th, td {
+    padding: 10px;
+}
+th {
+    text-align: right;
+}
+
+th,td {
+    border-bottom: 1px solid #DCDCDC;
+    font-size: 12px;
+}
+
+img.item-image {
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+}
+
+caption {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+img.logo {
+    margin-top: 10px;
+    float: left;
+    height: 45px;
+}
+
+.height-70px {
+    height: 70px;
+}
+
+.item-area {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.menu-item {
+    float: right;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+a.menu-item.logout {
+    margin: 0 0 0 10px;
+}
+
+.direct-L {
+    margin-right: 40px;
+}
+
+.direct-L:hover,.direct-R:hover {
+    color: #F0E68C;
+}
+
+button.menu-item.logout {
+    border: none;
+    background-color: transparent;
+}
+
+button.menu-item.logout:hover {
+    color: #F0E68C;
+}
+
+button[type="submit"]:focus {
+    outline: 0;
+}
+
+/* ログインページ・登録ページ */
+
+.login-area {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.login-area.form-box {
+    display: block;
+    box-shadow: 0 5px 4px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.form-item {
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+div.form-title {
+    font-size: 25px;
+    margin: 0 20px;
+    padding: 30px 20px 5px 0;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+p {
+    margin-left: 20px;
+}
+
+div.form-title,label {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+p.name-area,p.mail-area,p.pass-area,p.pass_confirm-area {
+    margin-top: 30px;
+}
+
+.name-form,.mail-form,.pass-form,.price-form {
+    width: 70%;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+input[type="text"]:focus,input[type="password"]:focus {
+    outline: 0;
+}
+
+div.submit-area {
+    margin: 40px 0 0 20px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+
+.submit-login {
+    padding: 12px 18px;
+    font-size: 14px;
+    background-color: #00BFFF;
+    border: 1px solid #15AEEC;
+    border-radius: 3px;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+}
+
+.submit-login:hover {
+    background-color: #6495ED;
+    border: 1px solid #1E90FF;
+}
+
+a.set-pass {
+    margin-left: 10px;
+    color: #00BFFF;
+    vertical-align: bottom;
+}
+
+a.set-pass:hover {
+    color: #EE82EE;
+}
+
+/* 商品管理ページ */
+
+td.price,td.stock,td.status,td.delete {
+    text-align: right;
+}
+
+td.status {
+    padding: 7px 7px 7px 14px;
+}
+
+th.id,th.image,td.id,td.image {
+    text-align: center;
+}
+
+.register-content {
+    width: 100%;
+    text-align: right;
+}
+
+button.add-button {
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+    color: #2E8B57;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: #7FFFD7;
+    border: 1px solid #66CDAA;
+    border-radius: 10px;
+}
+
+button.add-button:hover {
+    color: #7FFFD4;
+    background-color: #66CDAA;
+    border: 1px solid #3CB371;
+}
+
+button.add-button:focus {
+    outline: 0;
+}
+
+
+img.product-image {
+    width: 15%;
+    height: auto;
+}
+
+img.edit-image {
+    max-width: 15px;
+    height: auto;
+}
+
+img.delete-image {
+    max-width: 20px;
+    height: auto;
+}
+
+img.delete-image:hover {
+    opacity: 0.7;
+}
+
+/* ボタン（ステータス変更） */
+
+#public {
+    width: 60px;
+    border: 1px solid #009E4D;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #00B359, #006633, #00B359);
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#private {
+    width: 60px;
+    border: 1px solid #DC143C;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #DC143C, #800B23, #DC143C);
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* 登録モーダルウィンドウ */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+    opacity: 0.8;
+}
+.modal-content {
+    position: absolute;
+    width: 70%;
+    background-color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    box-shadow: 0 3px 4px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.modal-title-register {
+    color: #228B22;
+    font-weight: lighter;
+    padding: 20px 0 20px 20px;
+    margin: 0;
+    background-color: #7FFFD7;
+    border-radius: 8px 8px 0 0;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+p.product-name-area,p.product-price-area,p.product-stock-area,p.product-image-area,p.product-status-area {
+    margin-top: 30px;
+}
+
+.price-form,.stock-form {
+    width: 70%;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.modal-button-area {
+    width: 100%;
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+
+input.form-button,button.form-button {
+    width: 90px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+
+#confirm {
+    cursor: pointer;
+    background-color: #7FFFD7;
+    color: #2E8B57;
+    border-radius: 5px;
+    border: none;
+}
+
+#confirm:hover {
+    color: #7FFFD4;
+    background-color: #66CDAA;
+}
+
+#cancel {
+    cursor: pointer;
+    background-color: #DC143C;
+    color: #8B0000;
+    border-radius: 5px;
+    border: none;
+}
+
+#cancel:hover {
+    color: #FF7F50;
+    background-color: #B22222;
+}
+
+/* 編集モーダルウィンドウ */
+
+.modal.edit-modal {
+
+}
