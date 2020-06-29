@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/management', 'ManagementController@management')->name('management');
+Route::post('/management', 'ManagementController@register');
+Route::post('/management/status', 'ManagementController@change_status');
